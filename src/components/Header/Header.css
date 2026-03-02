@@ -1,0 +1,22 @@
+.pfp {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or contain if you prefer */
+    border-radius: 15px;
+    border: 5px solid rgb(255, 71, 243);
+    display: block;
+}
+
+.pfpbutton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+nav { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

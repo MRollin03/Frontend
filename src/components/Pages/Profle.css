@@ -1,0 +1,203 @@
+.value-section { 
+    display: flex;
+    gap: 20px;    
+}
+
+.headerText {
+    padding: 25px;
+}
+
+.pfp{
+     width: 10;
+    height: 10%;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  background-color: rgb(10, 10, 10);
+  
+}
+
+.value {
+    background-color: black;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 20px;
+    transition: border-color 0.3s ease;
+    background: linear-gradient(
+    145deg,
+    rgba(20,20,30,0.6),
+    rgba(10,10,15,0.8)
+    );   
+}
+
+.value:hover {
+    border-color: hotpink;
+}
+
+.icon {
+    color: rgb(255, 71, 243);
+    font-size: 2rem;
+    transition: 0.25s ease;
+}
+
+.value:hover .icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.profile-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.pfp-wrapper {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.profile-pfp {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 3px solid rgba(255,255,255,0.1);
+
+    position: relative;
+    z-index: 2;
+}
+
+.pfp-glow {
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        45deg,
+        rgb(255, 71, 243),
+        transparent,
+        rgb(100,150,255)
+    );
+
+    filter: blur(12px);
+    opacity: 0.6;
+    z-index: 1;
+
+    animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0% { transform: scale(0.95); opacity: 0.4; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(0.95); opacity: 0.4; }
+}
+
+.bio-card {
+    flex: 1;
+
+    padding: 25px 30px;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(20,20,30,0.6),
+        rgba(10,10,15,0.8)
+    );
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    box-shadow:
+        inset 0 0 20px rgba(255,255,255,0.03),
+        0 0 30px rgba(255,71,243,0.05);
+
+    transition: 0.3s ease;
+}
+
+.bio-card h2 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.steam-id {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+.bio-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* LOGOUT PAGE DIV STUFFIES */
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px
+}
+
+div a{
+    padding: 20px;
+}
+
+div button{
+
+    background-color: hotpink;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    width: 10rem;
+    height: 2rem;
+    padding: 2rem;
+    margin:10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+div button:hover{
+
+    background-color: rgb(142, 54, 98);
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    width: 10rem;
+    height: 2rem;
+    padding: 2rem;
+    margin:10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+
+
